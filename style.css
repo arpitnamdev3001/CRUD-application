@@ -1,0 +1,55 @@
+body {
+    background-color: lightblue
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box {
+    width: 700px;
+    height: 500px;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-container, .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    height: 24px;
+    margin: 10px;
+    align-items: center;
+    border: groove;
+}
+.msg, .check-list {
+    text-align: center;
+    color: #ff1f1f;
+    font-size: 18px;
+    
+}
+button {
+    width: 200px;
+    height: 24px;
+    margin: 10px;
+    align-items: center;
+    border: groove;
+    color: green;
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 0px 10px 0px 17px;
+    text-align: center;
+  }

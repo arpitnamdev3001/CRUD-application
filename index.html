@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    <form>
+    <div class="container">
+        <div class="box">
+            <h2>CRUD Application</h2>
+            <div class="input-container"><input type="number" placeholder="ID" class="id" required></div>
+            <div class="input-container"><input type="text" placeholder="FirstName" class="firstname" required></div>
+            <div class="input-container"><input type="text" placeholder="LastName" class="lastname" required></div>
+            <div class="button-container"><button type="button" class="btn">Submit</button></div>
+            <div><p class="msg"></p></div>
+            <!-- <div><p><u>Check Data List</u></p></div> -->
+            <div class="table-section">
+                <table style="width:95%" class="data-heading">
+                    <tr>
+                      <td>ID</td>
+                      <td>First Name</td>
+                      <td>Last Name</td>
+                    </tr>
+                <tbody class="check-list">
+                </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
