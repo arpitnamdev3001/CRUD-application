@@ -15,6 +15,13 @@ existingData.push({id, firstName, lastName});
 localStorage.setItem('userData', JSON.stringify(existingData));
 };
 
+const deleteRow = (id) => {
+    let data = JSON.parse(localStorage.getItem('userData')) || [];
+    data = data.filter(item => item.id !== id);
+    localStorage.setItem('userData', JSON.stringify(data));
+    updateTable(); // Refresh the table after deletion
+};
+
 
 const updateTable = () => {
     const data = JSON.parse(localStorage.getItem('userData')) || [];
@@ -25,11 +32,19 @@ const updateTable = () => {
         <td>${element.id}</td>
         <td>${element.firstName}</td>
         <td>${element.lastName}</td>
+        <td><button class="delete-button" data-id="${element.id}">Delete</button></td>
         `
         checkList.appendChild(row);
     });
     table.style.display = 'block';
+    document.querySelectorAll('.delete-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const idToDelete = this.getAttribute('data-id');
+            deleteRow(idToDelete);
+        });
+    });
 }
+
 button.addEventListener('click', () => {
         let idValue = id.value;
         let firstValue = firstName.value;
