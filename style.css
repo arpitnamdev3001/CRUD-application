@@ -37,7 +37,7 @@ input {
     font-size: 18px;
     
 }
-button {
+.btn {
     width: 200px;
     height: 24px;
     margin: 10px;
@@ -53,3 +53,9 @@ table, th, td {
     margin: 0px 10px 0px 17px;
     text-align: center;
   }
+
+.delete-button {
+    background-color: cornflowerblue;
+  color: blanchedalmond;
+}
+  
